@@ -15,6 +15,12 @@ cask "clipto" do
 
   app "clipto.app"
 
+  postflight do
+    system_command "/usr/bin/xattr",
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/clipto.app"],
+                   sudo: true
+  end
+
   zap trash: [
     "~/Library/Application Support/clipto",
     "~/Library/Preferences/cc.junler.clipto.plist"
