@@ -17,8 +17,7 @@ cask "clipto" do
 
   postflight do
     system_command "/usr/bin/xattr",
-                   args: ["-dr", "com.apple.quarantine", "#{appdir}/clipto.app"],
-                   sudo: true
+                   args: ["-dr", "com.apple.quarantine", "#{appdir}/clipto.app"]
   end
 
   zap trash: [
