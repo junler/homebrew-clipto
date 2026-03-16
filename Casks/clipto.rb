@@ -9,11 +9,11 @@ cask "clipto" do
     url "https://github.com/junler/clipto/releases/download/v#{version}/clipto_#{version}_x64.dmg"
   end
 
-  name "Clipto"
+  name "clipto"
   desc "Clipboard manager"
   homepage "https://github.com/junler/clipto"
 
-  app "Clipto.app"
+  app "clipto.app"
 
   zap trash: [
     "~/Library/Application Support/clipto",
