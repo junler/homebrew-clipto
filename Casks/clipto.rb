@@ -1,11 +1,11 @@
 cask "clipto" do
-  version "0.2.1"
+  version "0.2.2"
 
   if Hardware::CPU.arm?
-    sha256 "7a1facd017b017780f251c6e392e879af57b6a96e6f7c0967abbf0ef7e12a917"
+    sha256 "e5281c59e3007bde2184b2a9e25b4951cc2be5cf2c5bce1da083d52584f7120b"
     url "https://github.com/junler/clipto/releases/download/v#{version}/clipto_#{version}_aarch64.dmg"
   else
-    sha256 "7a1facd017b017780f251c6e392e879af57b6a96e6f7c0967abbf0ef7e12a917"
+    sha256 "e5281c59e3007bde2184b2a9e25b4951cc2be5cf2c5bce1da083d52584f7120b"
     url "https://github.com/junler/clipto/releases/download/v#{version}/clipto_#{version}_x64.dmg"
   end
 
